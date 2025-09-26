@@ -1,0 +1,26 @@
+/* Reset & basic styling */
+* { margin:0; padding:0; box-sizing:border-box; font-family: 'Poppins', sans-serif; }
+body { background: #f0f4f8; display:flex; justify-content:center; align-items:center; min-height:100vh; }
+.container { background: #fff; padding:30px; border-radius:15px; box-shadow:0 10px 25px rgba(0,0,0,0.1); width:450px; text-align:center; }
+
+h1 { margin-bottom:20px; color:#333; }
+
+.task-input, .task-controls { display:flex; gap:10px; margin-bottom:15px; flex-wrap:wrap; justify-content:center; }
+
+.task-input input, .task-input select, .task-controls select, .task-controls input { padding:8px; border-radius:8px; border:1px solid #ccc; outline:none; }
+.task-input button, .task-controls button { padding:8px 12px; border:none; border-radius:8px; cursor:pointer; background:#6ee7b7; transition:0.3s; }
+.task-input button:hover, .task-controls button:hover { background:#34d399; }
+
+#taskList { list-style:none; max-height:350px; overflow-y:auto; }
+
+.task-item { display:flex; justify-content:space-between; align-items:center; background:#f9fafb; padding:10px 15px; margin-bottom:10px; border-radius:8px; transition:0.3s; flex-wrap:wrap; }
+.task-item.completed { text-decoration: line-through; opacity:0.6; }
+
+.task-details { flex:1; text-align:left; }
+.task-actions button { background:none; border:none; cursor:pointer; margin-left:5px; font-size:16px; }
+
+.priority-Low { color:#10b981; }
+.priority-Medium { color:#f59e0b; }
+.priority-High { color:#ef4444; }
+
+.due-date { font-size:12px; color:#555; margin-left:5px; }
